@@ -1,9 +1,4 @@
 // Pari e Dispari;
-// Dichiariamo chi ha vinto.;
-
-// 
-
-let numeroGenerato = generaNumberRandom();
 
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 const sceltaUtente = prompt("Scegli tra pari o dispari: ");
@@ -11,6 +6,7 @@ const sceltaUtenteNumero = parseInt(prompt("Scegli un numero tra 1 e 5: "));
 
 // Generiamo un numero random(sempre da 1 a 5) per il computer(usando una funzione).
 const numeroPc = alert("Il numero del PC è :" + numeroGenerato);
+let numeroGenerato = generaNumberRandom();
 
 // Sommiamo i due numeri
 const somma = sceltaUtenteNumero + numeroGenerato;
@@ -31,6 +27,7 @@ function pariOdispari(num1, num2) {
 const parODis = pariOdispari(sceltaUtenteNumero, numeroGenerato);
 const risultatoPariOdispari = alert("la somma è: " + parODis);
 
+// Dichiariamo chi ha vinto.;
 if (sceltaUtente === "pari") {
     if (somma % 2 === 0) {
         alert("Ha vinto l'utente.");
